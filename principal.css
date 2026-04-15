@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+.pricipal{
+    background: #1e1e2f;
+    color: white;
+    padding: 15px;
+}
+
+.pricipal h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* MENÚ PRINCIPAL */
+.pricipal ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricipal ul li{
+    position: relative;
+    padding: 10px;
+}
+
+/* LINKS */
+.pricipal ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* SUBMENÚ (OCULTO POR DEFECTO) */
+.pricipal ul li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #2c2c3e;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 180px;
+    z-index: 1000;
+}
+
+/* MOSTRAR SUBMENÚ */
+.pricipal ul li:hover > ul{
+    display: block;
+}
+
+/* ITEMS DEL SUBMENÚ */
+.pricipal ul li ul li{
+    padding: 8px 10px;
+}
+
+/* CONTENEDORES */
+.padre{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.hijo{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* TARJETAS */
+.nieto{
+    width: 300px;
+    background: #f5f5f5;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.nieto:hover{
+    transform: scale(1.05);
+}
+
+.nieto h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* IMÁGENES */
+.nieto img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* LISTAS */
+.nieto ul{
+    padding-left: 20px;
+}
+
+.nieto ul li{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+footer {
+    background: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
